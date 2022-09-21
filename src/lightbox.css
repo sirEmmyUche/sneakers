@@ -1,0 +1,57 @@
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+
+/* creating a lightbox to display items/collections on click */
+
+.light-box{
+    border: 1px solid black;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:  hsl(220, 13%, 13%);
+}
+
+/* creating the content of the light-box */
+
+.light-box-content{
+    position: relative;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.light-box div>img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* positioning the lightbox buttons */
+
+ .next,.prev{
+    position: absolute;
+    top: 50%;
+}
+
+.next{
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }

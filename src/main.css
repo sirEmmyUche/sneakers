@@ -1,0 +1,176 @@
+body{
+    background-color:  hsl(0, 0%, 100%);
+}
+
+
+main{
+    margin: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#light-bulb img{
+    border-radius: 20px;
+}
+
+#light-bulb{
+    /* border: 1px solid black; */
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.display-item{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.box div{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.box div>img:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 20px;
+    opacity: 70%;
+}
+
+.box{
+    display:flex;
+}
+/* 
+.section-2{
+    border: 1px solid black;
+} */
+
+h1{
+    color: hsl(26, 100%, 55%);
+    font-size: 15px;
+    margin-bottom: 1em;
+}
+
+h2{
+    font-size: 3vmax;
+    max-width: 30vmax;
+    /* border: 1px solid black; */
+    margin-bottom: 2rem;
+}
+
+.txt{
+    /* border: 1px solid black; */
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    max-width: 30vmax;
+    color: hsl(219, 9%, 45%);
+    opacity: 75%; 
+}
+
+.item-btn{
+    margin-top: 2rem;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.percent{
+    padding: 5px;
+    margin-left: 10px;
+    color: hsl(26, 100%, 55%);
+    border: none;
+    background-color: hsl(25, 100%, 94%);
+}
+.price-tag{
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.item-btn{
+    display: flex;
+    align-items: center;
+}
+
+.cart-btn{
+    margin-left: 10px;
+    padding: 5px;
+    background-color: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+    width: 150px;
+    border-radius: 25px;
+    border-color: hsl(26, 100%, 55%);
+}
+
+.btn-group button{
+    width:30px;
+    height:30px;
+    border: none;
+}
+
+.minus-btn,.add-btn{
+    color: hsl(26, 100%, 55%);
+    font-size: large;
+}
+
+.tag{
+    display: flex;
+}
+
+.change-price{
+    color:  hsl(219, 9%, 45%);
+    opacity: 75%;
+}
+
+
+@media only screen and (max-width: 600px){
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1;
+        place-items: center;
+    }
+
+    #light-bulb{
+        width: 100%;
+        grid-row: 1;
+    }
+    .section-2{
+        width: 100%;
+        grid-row: 2;
+    }
+
+    .item-btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .amount{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .box div{
+        display: none;
+    }
+
+    .display-item,.txt,.cart-btn,h2{
+        width: 100%;
+    }
+
+    .display-item{
+        position: relative;
+        width: 100%;
+    }
+}
