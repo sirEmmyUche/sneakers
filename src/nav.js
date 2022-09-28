@@ -30,16 +30,6 @@ function Nav(props) {
         setListFull(!listEmpty);
       };
 
-
-      // const [calculation, setCalculation] = useState(0);
-      // useEffect(()=>{
-      //   setCalculation((c)=>{
-      //     let c = props.price;
-      //     c*props.count})
-      // });
-
-     
-
     return ( //the img element is the item handling the event to call the toggle class function.
        <nav id='main-nav'>
          <div className='logo-container'>
